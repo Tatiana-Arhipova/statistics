@@ -45,30 +45,29 @@ class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 9;
 
-
         long actual = service.minSales(sales);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    void calculateNumberOfMonthsMinAverage() {
+    void calculateNumberOfMonthsBelowAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
-        long actual = service.numberOfMonthsMinAverage(sales);
+        long actual = service.numberOfMonthsBelowAverage(sales);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    void calculateNumberOfMonthsMaxAverage() {
+    void calculateNumberOfMonthsAboveAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
-        long actual = service.numberOfMonthsMaxAverage(sales);
+        long actual = service.numberOfMonthsAboveAverage(sales);
 
         assertEquals(expected, actual);
     }
