@@ -11,8 +11,8 @@ public class StatsService {
 
     public long calculateAverageAmount(long[] sales) {
 
-        long calculateAverageAmount = calculateSum(sales) / sales.length;
-        return calculateAverageAmount;
+        long AverageAmount = calculateSum(sales) / sales.length;
+        return AverageAmount;
 
     }
 
